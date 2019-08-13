@@ -1,0 +1,28 @@
+/* Padding to support responsive and overcome navigation bar */
+
+body {
+    padding-top: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    padding-left: 1.5rem;
+}
+
+
+/* Apply tan color for the field */
+
+.tan {
+    background-color: #D2B48C;
+}
+
+
+/* Error message validation color */
+
+#errorMsgId {
+    color: green;
+}
+
+#errorMsgId.badInput {
+    color: red;
+}

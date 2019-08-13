@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome: https://fontawesome.com/icons?d=gallery&m=free -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="css/sites.css" />
+
+    <title>Event Exercise - 1</title>
+</head>
+
+<body>
+    <!-- Start Body -->
+
+    <!-- Navigation to applicable web pages -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
+        <a class="navbar-brand" href="index.html">Event Exercise - 1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header of the page outlining the logo-->
+    <header>
+        <div class="jumbotron">
+            <div class="container text-right">
+                <h1 class="trend-title font-italic">Event Exercise - 1</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Content - Vision of the website-->
+
+    <main>
+        <section>
+            <h3 class="font-italic ml-2">User Profile</h3>
+
+
+            <div class="container justify-content-center border">
+                <form class="form-group" id="userProfileForm" action="#" method="GET" target="_self">
+                    <div id="userProfileDiv" class="mt-2">
+                        <div class="row">
+                            User Profile:
+                        </div>
+                        <div class="row mt-1 form-inline">
+                            <label class="d-none d-md-inline col-md-1" for="inputName">Name</label>
+                            <input type="text" id="inputName" name="inputName" class="d-inline form-control col-md-3" placeholder="Enter Name" autofocus required>
+
+                            <label class="d-none d-md-inline col-md-1" for="inputAddress">Address</label>
+                            <input type="text" id="inputAddress" name="inputAddress" class="d-inline form-control col-md-3" placeholder="Enter Address" required>
+
+                            <label class="d-none d-md-inline col-md-1" for="inputCity">City</label>
+                            <input type="text" id="inputCity" name="inputCity" class="d-inline form-control col-md-3" placeholder="Enter City" required>
+
+                            <label class="d-none d-md-inline col-md-1" for="inputState">State</label>
+                            <input type="text" id="inputState" name="inputState" class="d-inline mt-1 form-control col-md-3" placeholder="Enter State" required>
+
+                            <label class="d-none d-md-inline col-md-1" for="inputZip">Zip</label>
+                            <input type="text" id="inputZip" name="inputZip" class="d-inline mt-1 form-control col-md-2" placeholder="Enter Zip" required>
+                        </div>
+                    </div>
+                    <div class="row mt-1 form-inline">
+                        <!-- select a room type indicates as not selected option-->
+                        <label class="d-none d-md-inline col-md-1" for="selectBillAddrType">Shipping Options</label>
+                        <select id="selectBillAddrType" class="d-none d-inline form-control col-md-3" name="selectBillAddrType">
+                            <option value=" ">Select a Billing address option</option>
+                            <option value ="BillToSameAddr">Bill to Same Address</option>
+                            <option value ="BillToDiffAddr">Bill to Different Address</option>
+                       </select>
+                    </div>
+                    <div id="billingAddrDiv" class="mt-2">
+                        <div class="row">
+                            Billing Address:
+                        </div>
+                        <div class="row mt-1 form-inline">
+                            <label class="d-none d-md-inline col-md-1" for="inputBillName">Name</label>
+                            <input type="text" id="inputBillName" name="inputBillName" class="d-inline col-md-3" placeholder="Enter Name">
+
+                            <label class="d-none d-md-inline col-md-1" for="inputBillAddress">Address</label>
+                            <input type="text" id="inputBillAddress" name="inputBillAddress" class="d-inline form-control col-md-3" placeholder="Enter Address">
+
+                            <label class="d-none d-md-inline col-md-1" for="inputBillCity">City</label>
+                            <input type="text" id="inputBillCity" name="inputBillCity" class="d-inline form-control col-md-3" placeholder="Enter City">
+
+                            <label class="d-none d-md-inline col-md-1" for="inputBillState">State</label>
+                            <input type="text" id="inputBillState" name="inputBillState" class="d-inline mt-1 form-control col-md-3" placeholder="Enter State">
+
+                            <label class="d-none d-md-inline col-md-1" for="inputBillZip">Zip</label>
+                            <input type="text" id="inputBillZip" name="inputBillZip" class="d-inline mt-1 form-control col-md-2" placeholder="Enter Zip">
+                        </div>
+                    </div>
+                    <div class="row mt-1 form-inline">
+                        <label class="d-none d-md-inline col-md-1" for="inputCreditNum">Credit Card</label>
+                        <input type="number" id="inputCreditNum" name="inputCreditNum" class="d-inline form-control col-md-3" placeholder="Enter Credit Card" required>
+                        <label class="d-none d-md-inline col-md-1" for="inputExpMonth">Expiration Year</label>
+                        <input type="month" id="inputExpMonth" name="inputExpMonth" class="d-inline form-control col-md-3" required>
+                        <label class="d-none d-md-inline col-md-1" for="inputSecCode">Security Code</label>
+                        <input type="number" id="inputSecCode" name="inputSecCode" class="d-inline form-control col-md-3" placeholder="Enter Security Code" min=0 max=999 required>
+                    </div>
+
+
+                    <div class="row justify-content-center">
+                        <div class="mt-3 col-md-2">
+                            <button id="submitBtn" class="btn btn-sm btn-block btn-primary btn-info" type="submit">Submit</button>
+                        </div>
+                        <div class="mt-3 col-md-2">
+                            <button id="resetBtn" class="btn btn-sm btn-block btn-primary btn-info" type="reset">Reset</button>
+                        </div>
+                    </div>
+                    <div class="row mt-3 ml-1">
+                        <p id="errorMsgId"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+        <!-- Start of footer -->
+        <div class="row justify-content-center">
+            <p class="display-5 font-weight-light">@HartCode Exercise</p>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <!-- End of footer-->
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script async src="https://platform.twitter.com/widgets.js "></script>
+
+    <!-- custom JavaScript-->
+    <script src="scripts/eventExercise.js"></script>
+
+</body>
+
+</html>
